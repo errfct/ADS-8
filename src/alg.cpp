@@ -3,6 +3,8 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <utility>
+#include <string>
 #include "bst.h"
 
 void makeTree(BST<std::string>& tree, const char* filename) {
@@ -61,7 +63,6 @@ void printFreq(BST<std::string>& tree) {
         }
         outFile.close();
     } else {
-        std::cout << "Error opening result file
-          for writing!" << std::endl;
+        std::cout << "Error opening result file for writing!" << std::endl;
     }
 }
