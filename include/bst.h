@@ -70,7 +70,6 @@ class BST {
 
   void insert(const T& data) { root = addNode(root, data); }
   int search(T data) const { return searchNode(root, data); }
-  
   int depth() const {
     int fullDepth = depthNode(root);
     return fullDepth > 0 ? fullDepth - 1 : 0;
